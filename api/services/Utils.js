@@ -20,5 +20,5 @@ module.exports.Filter = async function (updates, objects) {
 };
 
 module.exports.GetNumber = function () {
-    return getNumber(1,50);
+    return getNumber(1,5000);
 };
