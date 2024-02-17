@@ -64,7 +64,9 @@ module.exports = {
     },
     displayAll: async function(req, res){
         try{
-            let projects = await Project.find({});
+            let projects = await Project.find({
+              limit: 10
+            });
             if(typeof req.session.projects === 'undefined'){
                 req.session.projects = projects;
             }
